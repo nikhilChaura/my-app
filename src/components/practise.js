@@ -58,7 +58,7 @@ myCode.forEach( (item) => {
     console.log(item.languageName)
 })
 
-//Filters.....just to return true or false based on the given conditionmeans aga condition follow karege to vo uss element ko return kar dega  and map is used to 
+//Filters.....just to return true or false based on the given condition means aga condition follow karege to vo uss element ko return kar dega  and map is used to 
 
 const numberFilter = [12,34,56,2,1,5,788]
 const newNumber = numberFilter.filter( (nums) => nums > 4)
