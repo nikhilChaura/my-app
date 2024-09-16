@@ -1,0 +1,64 @@
+<!-- setTimeout:
+Definition: The setTimeout() function is used to execute a specified function once after a certain delay (in milliseconds).
+
+Syntax:
+
+javascript
+Copy code
+setTimeout(function, delay);
+function: The function to be executed after the delay.
+delay: The time in milliseconds to wait before executing the function.
+Example:
+
+javascript
+Copy code
+setTimeout(function() {
+  console.log("This runs after 2 seconds");
+}, 2000);
+This example will print "This runs after 2 seconds" after a 2-second delay.
+setInterval:
+Definition: The setInterval() function is used to repeatedly execute a specified function at regular intervals (in milliseconds) until it's stopped using clearInterval().
+
+Syntax:
+
+javascript
+Copy code
+setInterval(function, interval);
+function: The function to be executed repeatedly.
+interval: The time in milliseconds between each execution of the function.
+Example:
+
+javascript
+Copy code
+setInterval(function() {
+  console.log("This runs every 2 seconds");
+}, 2000);
+This example will repeatedly print "This runs every 2 seconds" every 2 seconds.
+Key Difference:
+setTimeout() runs the function once after a specified delay.
+setInterval() runs the function repeatedly at specified time intervals.
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Button Example</title>
+</head>
+<body>
+    <h1>Welcome to My Web Page</h1>
+    <h3>Click the button below:</h3>
+    <button id="but01" onclick="alert('Button clicked!')">Click Me</button>
+</body>
+<script>
+    const sayNikhil = function()
+    {
+      console.log("Single Page");
+    }
+    setTimeout(sayNikhil,10000,)
+
+
+</script>
+</html>

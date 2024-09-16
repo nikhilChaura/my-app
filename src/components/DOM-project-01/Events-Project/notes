@@ -1,0 +1,99 @@
+Events
+-----------
+
+JavaScript events ka concept web development mein bahut important hai. Events ka matlab hota hai koi action jo browser mein user ke interaction 
+ke baad hota hai. Jaise ki button click, page load, mouse hover, keyboard input, etc. Jab yeh actions hote hain, toh browser ek event trigger 
+karta hai aur aapko code likhna padta hai ki us event ke response mein kya hona chahiye.
+
+JavaScript Events ke Main Topics:
+
+Event Types:
+
+Mouse Events: Jab mouse ke through koi action hota hai, jaise:
+click: Jab user kisi element ko click karta hai.
+dblclick: Double click hota hai.
+mouseover: Jab user mouse ko kisi element ke upar le jata hai.
+mouseout: Jab mouse kisi element se bahar chala jata hai.
+
+Keyboard Events: Jab keyboard ke keys use ki jati hain, jaise:
+keydown: Jab key dabai jati hai.
+keyup: Jab key chhodi jati hai.
+keypress: Jab koi key press hoti hai.
+
+Form Events: Forms ke saath interact karte waqt hone wale events, jaise:
+submit: Jab form submit hota hai.
+focus: Jab form ka input field focus mein aata hai.
+blur: Jab input field se focus hat jata hai.
+
+Window Events: Ye events browser window ke related hote hain, jaise:
+load: Jab poora page load hota hai.
+resize: Jab window ka size change hota hai.
+scroll: Jab page scroll kiya jata hai.
+
+Event Listeners:
+Ye wo functions hote hain jo kisi specific event ko sunte hain. Jab event hota hai, to ye functions activate hote hain.
+
+Syntax:
+javascript
+
+element.addEventListener('event', function);
+
+Example:
+javascript
+
+button.addEventListener('click', function() {
+    alert('Button clicked!');
+});
+
+Event Object:
+Jab event trigger hota hai, ek object create hota hai jo event ke baare mein saari information deta hai, jaise kis element pe click
+hua, mouse ka position, key kaunsa press kiya, etc.
+
+Example:
+javascript
+
+element.addEventListener('click', function(event) {
+    console.log(event);  // Event object ki information milegi
+});
+
+Event Propagation:
+Jab ek event trigger hota hai, toh wo child element se parent element tak propagate hota hai.
+
+Do important terms:
+Event Bubbling: Jab event sabse pehle child element pe trigger hota hai aur phir parent elements tak propagate karta hai.
+Event Capturing: Jab event sabse pehle parent element pe trigger hota hai aur phir child element tak jata hai.
+
+Preventing Default Behavior:
+Kabhi kabhi kuch events ke default behavior ko rokhna hota hai, jaise form submit karte waqt page reload hona.
+event.preventDefault() ka use hota hai is cheez ko rokne ke liye.
+
+Event Delegation:
+Event delegation ka concept tab aata hai jab hum kisi parent element par event listener lagate hain aur wo event uske child elements ke liye bhi 
+kaam karta hai. Yeh approach memory efficient hota hai.
+
+Important Topics jo cover hone chahiye:
+Mouse events (click, dblclick, mouseover, mouseout)
+Keyboard events (keydown, keyup)
+Form events (submit, focus, blur)
+Event listeners (addEventListener)
+Event object (event)
+Event propagation (bubbling, capturing)
+Preventing default behavior (preventDefault)
+Event delegation
+
+Project Details
+-----------------
+HTML File (index.html)
+CSS File (style2.css)
+JavaScript File (script2.js)
+
+Explanation of the Project:
+Click Event: Jab button click hota hai, toh heading ka text aur color change ho jata hai.
+Form Submit Event: Form submit hota hai, lekin hum preventDefault() use kar rahe hain taki page reload na ho.
+Input Focus/Blur Events: Jab input field par focus aata hai, toh background color change hota hai, aur blur hone par wapas normal ho jata hai.
+Keydown Event: Jab bhi koi key press hoti hai, toh ek message display hota hai jo batata hai kaunsi key press hui.
+
+Summary:
+Is project mein aapko different types ke events dekhne ko milte hain jaise button click, 
+form submit, input focus/blur, aur key press events. Ye saare events daily web development 
+mein kaam aate hain aur yahi JavaScript events ka basic understanding denge.
